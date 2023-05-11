@@ -49,7 +49,7 @@ function App() {
       <input type="text" ref={todoNameRef} /> {/* 入力した文字をtodoNameRef関数で取得 */}
       <button onClick={handleAddTodo}>タスクを追加</button>
       <button onClick={handleClear}>完了したタスクの削除</button>
-      <div>残りのタスク:{todos.filter((todo) => !todo.completed).length}</div> {/* falseのものだけをフィルタリングする（残す） */}
+      <div>★残りのタスク:{todos.filter((todo) => !todo.completed).length}</div> {/* falseのものだけをフィルタリングする（残す） */}
     </div>
   );
 };
